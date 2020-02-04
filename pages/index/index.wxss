@@ -1,25 +1,24 @@
-/**index.wxss**/
-.userinfo {
+/* pages/index/index.wxss */
+.container {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
 }
 
-.userinfo-avatar {
-  width: 200rpx;
-  height: 200rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+text {
+  font-family: '苹方', '微软雅黑', 'Apple System';
+  font-size: 2em;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+button {
+  font-family: '苹方', '微软雅黑', 'Apple System';
+  color: #000;
+  border: 2em;
 }
 
-.about-me {
-  margin-top: 200rpx;
-}
-
-.usermotto {
-  margin-top: 150px;
+image {
+  height: 10em;
+  width: 10em;
 }
