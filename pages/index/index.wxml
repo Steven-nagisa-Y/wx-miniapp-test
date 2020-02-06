@@ -1,17 +1,40 @@
 <view class="container">
   <view class="top-picker-container">
   <text>选择城市：</text>
-  <picker mode="region">
-    <view id="city"> 北京市，北京市 </view>
+  <picker mode="region" bindchange="regionChanged">
+    <view id="city"> {{region}} </view>
   </picker>
   </view>
   <view class="weatherDisplay">
-    <image src="{{weatherImag}}" id="weatherImg"></image>
+    <image src="{{weatherImag}}" id="weatherImg" bindtap="getLocation"></image>
     <text class="temper">{{temper}}</text>
   </view>
   <view class="weatherDetail">
-    <view class="column"></view>
-    <view class="column"></view>
-    <view class="column"></view>
+    <view class="row">
+      <view class="box1">湿度</view>
+      <view class="box1">气压</view>
+      <view class="box1">能见度</view>
+    </view>
+    <view class="row">
+      <view class="box">{{shiDu}}%</view>
+      <view class="box">{{qiYa}}kPa</view>
+      <view class="box">{{nengJianDu}}km</view>
+    </view>
+    <view class="row">
+      <view class="box1">风速</view>
+      <view class="box1">风向</view>
+      <view class="box1">风力</view>  
+    </view>
+    <view class="row">
+      <view class="box">{{fengSu}}km/h</view>
+      <view class="box">{{fengXiang}}</view>
+      <view class="box">{{fengLi}}级</view>
+    </view>
+    <view class="row">
+      <view id="updateDate">{{updateTime}}</view>
+    </view>
+    <view class="row">
+      <view class="des">点击天气图标可更新天气</view>
+    </view>
   </view>
 </view>

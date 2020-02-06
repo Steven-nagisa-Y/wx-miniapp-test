@@ -1,49 +1,75 @@
 .container {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
+  justify-items: center;
 }
 .top-picker-container {
-  height: 20vh;
   display: flex;
   align-items: center;
+  margin: 20rpx;
 }
 text {
-  font-size: 40rpx;
+  font-size: 30rpx;
   font-weight: bold;
 }
 #city {
   color: #2233ff;
-  font-size: 40rpx;
+  font-size: 30rpx;
   border:1px dashed #aaa;
 }
 .weatherDisplay {
-  height: 35%;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 10rpx;
 }
 #weatherImg {
-  height: 100px;
-  width: 100px;
+  height: 200rpx;
+  width: 200rpx;
 }
 .temper {
-  font-size: 2em;
-  margin: 15rpx;
+  font-size: 70rpx;
+  color: #44ff00;
 }
 .weatherDetail {
   display: flex;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-}
-.column {
-  display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
-  width: 30%;
+  width: 100%;
+  margin-top: 40rpx;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 20rpx;
+}
+.box {
+  width: 33.3%;
+  text-align: center;
+  font-size: 40rpx;
+}
+.box1 {
+  width: 33.3%;
+  color: #222;
+  text-align: center;
+  font-size: 40rpx;
+}
+#updateDate {
+  width: 100%;
+  font-size: 20rpx;
+  text-align: center;
+  color: #bbb;
+  margin-top: 50rpx;
+}
+.des {
+  width: 100%;
+  font-size: 1em;
+  color: #bbb;
+  text-align: center;
 }
