@@ -1,6 +1,17 @@
-<!--pages/index/index.wxml-->
-<view class='container'>
-  <image src="https://stevenos.com/icon.png"></image>
-  <text>{{userName}}</text>
-  <button> 登陆 </button>
+<view class="container">
+  <view class="top-picker-container">
+  <text>选择城市：</text>
+  <picker mode="region">
+    <view id="city"> 北京市，北京市 </view>
+  </picker>
+  </view>
+  <view class="weatherDisplay">
+    <image src="{{weatherImag}}" id="weatherImg"></image>
+    <text class="temper">{{temper}}</text>
+  </view>
+  <view class="weatherDetail">
+    <view class="column"></view>
+    <view class="column"></view>
+    <view class="column"></view>
+  </view>
 </view>

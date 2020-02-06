@@ -1,24 +1,49 @@
-/* pages/index/index.wxss */
 .container {
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
 }
-
+.top-picker-container {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+}
 text {
-  font-family: '苹方', '微软雅黑', 'Apple System';
+  font-size: 40rpx;
+  font-weight: bold;
+}
+#city {
+  color: #2233ff;
+  font-size: 40rpx;
+  border:1px dashed #aaa;
+}
+.weatherDisplay {
+  height: 35%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#weatherImg {
+  height: 100px;
+  width: 100px;
+}
+.temper {
   font-size: 2em;
+  margin: 15rpx;
 }
-
-button {
-  font-family: '苹方', '微软雅黑', 'Apple System';
-  color: #000;
-  border: 2em;
+.weatherDetail {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
-
-image {
-  height: 10em;
-  width: 10em;
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 30%;
 }
