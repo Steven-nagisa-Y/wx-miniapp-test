@@ -1,0 +1,54 @@
+/* .container {
+  display: flex;
+  flex-direction: column;
+} */
+
+#videoPlay {
+  width: 100%;
+}
+.danmuContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 5px;
+}
+#danmuText {
+  height: 100rpx;
+  border: 1px solid #999;
+  border-radius: 20px;
+  flex-grow: 1;
+  text-align: center;
+  margin: 5px;
+}
+#btn_send {
+  color: white;
+  background: rgb(200, 200, 100);
+  border-radius: 20px;
+  width: 180rpx;
+  margin: 5px;
+  text-align: center;
+  font-size: 40rpx;
+}
+.videoList {
+  width: 100%;
+  min-height: 350rpx;
+  display: flex;
+  flex-direction: column;
+}
+.videoBar {
+  width: 95%;
+  display: flex;
+  flex-direction: row; 
+  border-bottom: 1px solid #999;
+  margin: 10px; 
+}
+.playButton {
+  width: 70rpx;
+  height: 70rpx;
+  margin: 10px;
+}
+.videoTitle {
+   font-size: 30rpx; 
+   margin: 10px;
+   flex-grow: 1;
+}

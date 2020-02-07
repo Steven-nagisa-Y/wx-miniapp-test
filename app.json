@@ -1,21 +1,39 @@
 {
-    "pages": [
-        "pages/index/index"
-    ],
-    "permission": {
-      "scope.userLocation": {
-        "desc": "你的位置信息将用于天气定位。"
-      }
-    },
-    "window": {
-        "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#ffffff",
-        "navigationBarTitleText": "Hi",
-        "navigationBarTextStyle": "black"
-    },
-    "style": "v2",
-    "networkTimeout": {
-        "request": 10000
-    },
-    "sitemapLocation": "sitemap.json"
+  "pages": [
+    "pages/index/index",
+    "pages/video/video"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于天气定位。"
+    }
+  },
+  "tabBar": {
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "看天气",
+        "iconPath": "images/tianqi.jpg",
+        "selectedIconPath": "images/tianqi.jpg"
+      },
+      {
+        "pagePath": "pages/video/video",
+        "text": "看视频",
+        "iconPath": "images/play.jpg",
+        "selectedIconPath": "images/play.jpg"
+      }]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "Hi",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "networkTimeout": {
+    "request": 10000
+  },
+  "sitemapLocation": "sitemap.json"
 }

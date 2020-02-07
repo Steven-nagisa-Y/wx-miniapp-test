@@ -1,5 +1,6 @@
 {
     "usingComponents": {},
-    "navigationBarTitleText": "城市天气-AiRocket",
-    "navigationBarBackgroundColor": "#66ccff"
+    "navigationBarTitleText": "看天气-AiRocket",
+    "navigationBarBackgroundColor": "#66ccff",
+    "enablePullDownRefresh": true
 }

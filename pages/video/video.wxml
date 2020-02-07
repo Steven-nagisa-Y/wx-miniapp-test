@@ -1,0 +1,11 @@
+<video id="videoPlay" controls="true" src="{{videoSrc}}"></video>
+  <view class="danmuContainer">
+    <input id="danmuText" type="text" placeholder="现在还发送不了，别急"></input>
+    <button id="btn_send">发送</button>
+  </view>
+  <view class="videoList">
+    <view class="videoBar" wx:for="{{videoList}}" wx:key="index" data-url="{{item.videoUrl}}" bindtap="playVideo">
+      <image src="/images/play.jpg" class="playButton"></image>
+      <text class="videoTitle">{{item.videoTitle}}</text>
+    </view>
+  </view>
