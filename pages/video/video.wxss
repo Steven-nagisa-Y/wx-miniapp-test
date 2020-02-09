@@ -10,6 +10,7 @@
   display: flex;
   flex-direction: row;
   width: 100%;
+  height: 100rpx;
   margin: 5px;
 }
 #danmuText {
@@ -25,6 +26,7 @@
   background: rgb(200, 200, 100);
   border-radius: 20px;
   width: 180rpx;
+  height: 100rpx;
   margin: 5px;
   text-align: center;
   font-size: 40rpx;

@@ -1,6 +1,4 @@
-// pages/video/video.js
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -9,15 +7,16 @@ Page({
       {
         id: "1",
         videoTitle: "【灵魂rap】如何让孩子爱上♂学习？",
-        videoUrl: "http://dl.airocket.tech/files/【灵魂rap】如何让孩子爱上♂学习？.mp4"
+        videoUrl: "https://dl.airocket.tech/files/【灵魂rap】如何让孩子爱上♂学习？.mp4"
       },
       {
         id: "2",
         videoTitle: "【名师rap】游戏不打不成才",
-        videoUrl: "http://dl.airocket.tech/files/【名师rap】游戏不打不成才.mp4"
+        videoUrl: "https://dl.airocket.tech/files/【名师rap】游戏不打不成才.mp4"
       }
     ],
-    videoSrc: ""
+    videoSrc: "", 
+    danmuText: ""
   },
 
   playVideo: function(e) {
@@ -28,6 +27,22 @@ Page({
       videoSrc: url_,
     });
     this.videoCtx.play();
+  },
+  getDanmu: function(e) {
+    console.log("video.js: 弹幕文字:" + e.detail.value);
+    this.setData({
+      danmuText: e.detail.value,
+    });
+  },
+  sendDanmu: function(e) {
+    let text = this.data.danmuText;
+    this.videoCtx.sendDanmu({
+      text: text,
+      color: "yellow"
+    });
+    this.setData({
+      danmuText: ""
+    });
   },
   /**
    * 生命周期函数--监听页面加载

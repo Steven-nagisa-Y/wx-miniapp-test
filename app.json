@@ -1,7 +1,10 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/video/video"
+    "pages/news/news",
+    "pages/video/video",
+    "pages/my/my",
+    "pages/detail/detail"
   ],
   "permission": {
     "scope.userLocation": {
@@ -11,6 +14,7 @@
   "tabBar": {
     "position": "bottom",
     "borderStyle": "black",
+    "selectedColor": "#328EEB",
     "list": [
       {
         "pagePath": "pages/index/index",
@@ -19,16 +23,29 @@
         "selectedIconPath": "images/tianqi.jpg"
       },
       {
+        "pagePath": "pages/news/news",
+        "text": "看新闻",
+        "iconPath": "images/index1.png",
+        "selectedIconPath": "images/index2.png"
+      },
+      {
         "pagePath": "pages/video/video",
         "text": "看视频",
         "iconPath": "images/play.jpg",
         "selectedIconPath": "images/play.jpg"
-      }]
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/my1.png",
+        "selectedIconPath": "images/my2.png"
+      }
+    ]
   },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#ffffff",
-    "navigationBarTitleText": "Hi",
+    "navigationBarTitleText": "AiRocket.tech",
     "navigationBarTextStyle": "black"
   },
   "style": "v2",

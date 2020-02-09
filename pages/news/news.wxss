@@ -1,0 +1,29 @@
+swiper {
+  height: 375rpx;
+  width: 100%;
+}
+swiper .swiperImg {
+  height: 100%;
+  width: 100%;
+}
+.newsContainer {
+  min-height: 600rpx;
+  padding: 15rpx;
+}
+.newsList {
+   display: flex;
+   flex-direction: row;
+   background: #10ddfd55;
+   border: 1px solid #aaa;
+   height: 200rpx;
+}
+.newsList .detailImg {
+  height: 180rpx;
+  padding: 10rpx;
+  border-radius: 30rpx;
+}
+.newsList .detailTitle {
+  width: 100%;
+  line-height: 40rpx;
+  font-size: 30rpx;
+}

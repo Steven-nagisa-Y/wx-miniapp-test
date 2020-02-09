@@ -1,10 +1,10 @@
-<video id="videoPlay" controls="true" src="{{videoSrc}}"></video>
+<video id="videoPlay" controls="true" src="{{videoSrc}}" enable-danmu="true" danmu-btn="true"></video>
   <view class="danmuContainer">
-    <input id="danmuText" type="text" placeholder="现在还发送不了，别急"></input>
-    <button id="btn_send">发送</button>
+    <input id="danmuText" type="text" value="{{danmuText}}" bindinput="getDanmu" placeholder="可以发送弹幕了"></input>
+    <button id="btn_send" bindtap="sendDanmu">发送</button>
   </view>
   <view class="videoList">
-    <view class="videoBar" wx:for="{{videoList}}" wx:key="index" data-url="{{item.videoUrl}}" bindtap="playVideo">
+    <view class="videoBar" wx:for="{{videoList}}" wx:key="id"  ata-url="{{item.videoUrl}}" bindtap="playVideo">
       <image src="/images/play.jpg" class="playButton"></image>
       <text class="videoTitle">{{item.videoTitle}}</text>
     </view>
